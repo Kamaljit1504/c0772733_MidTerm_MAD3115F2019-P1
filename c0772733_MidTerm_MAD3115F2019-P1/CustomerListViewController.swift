@@ -70,9 +70,11 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
         return cell
     }
     
-  
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "List of Customers"
     }
     
+   
     
     
     
