@@ -13,7 +13,7 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="c0772733_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="c0772733_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,10 +83,9 @@
                     <connections>
                         <outlet property="btnLogin" destination="KDp-BZ-daE" id="3ZJ-bu-OUe"/>
                         <outlet property="btnRememberMe" destination="BNa-tk-Swc" id="Iug-4f-lOW"/>
-                        <outlet property="btnSwitch" destination="BNa-tk-Swc" id="eRc-vQ-khT"/>
                         <outlet property="lblVersion" destination="BGi-Ef-kOm" id="NsS-cJ-hKp"/>
-                        <outlet property="txtpassword" destination="zmD-RB-zy6" id="UXE-zR-oP9"/>
-                        <outlet property="txtuser" destination="emh-hj-Yxq" id="SH4-ET-11n"/>
+                        <outlet property="txtPassword" destination="zmD-RB-zy6" id="VMJ-5I-ccO"/>
+                        <outlet property="txtUser" destination="emh-hj-Yxq" id="mGF-Ro-V54"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,7 +121,7 @@
                                             <segue destination="vxf-82-YXj" kind="show" id="aV3-I8-IcQ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qaQ-dE-30J">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mycell" id="qaQ-dE-30J">
                                         <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qaQ-dE-30J" id="z3H-Pd-sZD">

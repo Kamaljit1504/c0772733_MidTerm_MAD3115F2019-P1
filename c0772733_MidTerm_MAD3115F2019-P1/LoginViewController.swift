@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showVersion()
+
         let getdata = Singleton.getInstance()
         getdata.createCust()
         
@@ -38,15 +38,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func btnLogin(_ sender: UIButton) {
         
-        if readInformationPlist()
-        {
-            if self.btnRememberMe.isOn{
-                self.uDefault.set(txtUser.text, forKey: "username")
-                self.uDefault.set(txtPassword.text, forKey: "password")
-            }else{
-                self.uDefault.removeObject(forKey: "username")
-                self.uDefault.removeObject(forKey: "password")
-            }
+//        if readInformationPlist()
+//        {
+//            if self.btnRememberMe.isOn{
+//                self.uDefault.set(txtUser.text, forKey: "username")
+//                self.uDefault.set(txtPassword.text, forKey: "password")
+//            }else{
+//                self.uDefault.removeObject(forKey: "username")
+//                self.uDefault.removeObject(forKey: "password")
+//            }
             
             
             let storyBoard=UIStoryboard(name: "Main", bundle: nil)
@@ -55,53 +55,30 @@ class LoginViewController: UIViewController {
             
                           //let uname=txtUser.text!
                // print("Hello \(uname)")
-        }
-        else{
-            let alert = UIAlertController(title: "Invalid Username / Password", message: "check again", preferredStyle: .alert)
-            
-            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: {action
-                in
-                print("Cancle clicked")
-            }))
-            self.present(alert, animated: true)
-            print("invalid username or password")
-        }
+//        }
+//        else{
+//            let alert = UIAlertController(title: "Invalid Username / Password", message: "check again", preferredStyle: .alert)
+//
+//            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+//            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: {action
+//                in
+//                print("Cancle clicked")
+//            }))
+//            self.present(alert, animated: true)
+//            print("invalid username or password")
+//        }
         
     }
     
     
     
     func readInformationPlist() -> Bool{
-        if let bundlePath = Bundle.main.path(forResource: "users", ofType: "plist") {
-            let dictionary = NSMutableDictionary(contentsOfFile: bundlePath)
-            let usersList = dictionary!["users"] as! NSArray
-            
-            for u in usersList
-            {
-                let user = u as! NSDictionary
-                let uname = user["username"]! as! String
-                let pwd = user["password"]! as! String
-                if uname==txtUser.text! && pwd==txtPassword.text!
-                {
-                    return true
-                }
-            }
-            
-            
-        }
+      
         return false
     }
     
+   
+        
     
-    func showVersion()
-    {
-        if let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString"), let versionCode = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")  {
-            
-            lblVersion.text = "Version \(version) (\(versionCode))"
-        }
-        
-        
-    }
     
 }
