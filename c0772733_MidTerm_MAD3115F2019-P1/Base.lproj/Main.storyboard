@@ -82,7 +82,9 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnLogin" destination="KDp-BZ-daE" id="3ZJ-bu-OUe"/>
+                        <outlet property="btnRememberMe" destination="BNa-tk-Swc" id="Iug-4f-lOW"/>
                         <outlet property="btnSwitch" destination="BNa-tk-Swc" id="eRc-vQ-khT"/>
+                        <outlet property="lblVersion" destination="BGi-Ef-kOm" id="NsS-cJ-hKp"/>
                         <outlet property="txtpassword" destination="zmD-RB-zy6" id="UXE-zR-oP9"/>
                         <outlet property="txtuser" destination="emh-hj-Yxq" id="SH4-ET-11n"/>
                     </connections>
@@ -123,7 +125,7 @@
                         <barButtonItem key="backBarButtonItem" title="back" id="odR-Yt-kt4"/>
                         <barButtonItem key="rightBarButtonItem" title="+" id="wiT-bB-f1L">
                             <connections>
-                                <segue destination="AEC-Of-E4h" kind="show" id="uch-cU-X28"/>
+                                <segue destination="AEC-Of-E4h" kind="show" id="gxO-aw-yje"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
