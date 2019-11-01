@@ -19,9 +19,7 @@ class LoginViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        showVersion()
+       
         
         let getdata = Singleton.getInstance()
         getdata.createCust()
