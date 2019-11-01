@@ -321,6 +321,9 @@
                                 <rect key="frame" x="3" y="488" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add New Bill"/>
+                                <connections>
+                                    <segue destination="BJ9-8d-UiT" kind="show" id="dPd-GO-k8Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.59865672410000004" blue="0.65820135069999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
