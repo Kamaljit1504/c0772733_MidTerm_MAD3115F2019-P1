@@ -8,23 +8,58 @@
 
 import UIKit
 
-class CustomerListViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class CustomerListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    private func addLogoutButton()
+    {
+        let btnLogout=UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(CustomerListViewController.logout(sender:)))
+        
+        navigationItem.leftBarButtonItem=btnLogout
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc
+    func logout(sender: UIBarButtonItem)
+    {
+        print("logout")
+        navigationController?.popViewController(animated: true)
     }
-    */
-
+    
+    private func addCustomerButton()
+    {
+        let btnLogout=UIBarButtonItem(title: "ADD", style: .done, target: self, action: #selector(CustomerListViewController.addCustomer(sender:)))
+        
+        navigationItem.rightBarButtonItem=btnLogout
+    }
+    
+    @objc
+    func addCustomer(sender: UIBarButtonItem)
+    {
+        print("Customer Added")
+        let sb1=UIStoryboard(name: "Main", bundle: nil)
+        let addCustomerVC=sb1.instantiateViewController(withIdentifier: "addCustomerVC") as! AddCustomerViewController
+        navigationController?.pushViewController(addCustomerVC, animated: true)
+        
+    }
+    var tempvar = Singleton.getInstance()
+    
+    @IBOutlet weak var customerListTable: UITableView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        customerListTable.delegate=self
+        customerListTable.dataSource=self
+        navigationItem.hidesBackButton=true
+        addLogoutButton()
+        addCustomerButton()
+    }
+    
+    
+   
+    
+    
+    
+    
+    
+    
 }

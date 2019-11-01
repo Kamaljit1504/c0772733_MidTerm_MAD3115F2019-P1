@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B120261236CBA8A00171EFE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B120260236CBA8A00171EFE /* Singleton.swift */; };
+		9B120263236CBACD00171EFE /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B120262236CBACD00171EFE /* Customer.swift */; };
+		9B120265236CBB3100171EFE /* AddCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B120264236CBB3100171EFE /* AddCustomerViewController.swift */; };
 		9B84CC33236A62AF00ACECF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84CC32236A62AF00ACECF7 /* AppDelegate.swift */; };
 		9B84CC35236A62AF00ACECF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84CC34236A62AF00ACECF7 /* LoginViewController.swift */; };
 		9B84CC38236A62AF00ACECF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC36236A62AF00ACECF7 /* Main.storyboard */; };
@@ -19,7 +22,6 @@
 		9B84CC6B236A694100ACECF7 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC6A236A694000ACECF7 /* download.jpg */; };
 		9BA3CFA6236C936C009B6F48 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BA3CFA5236C936C009B6F48 /* users.plist */; };
 		9BA3CFA8236C99A7009B6F48 /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3CFA7236C99A7009B6F48 /* CustomerListViewController.swift */; };
-		9BDE8D63236BBF82002FDF6F /* CDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE8D62236BBF82002FDF6F /* CDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B120260236CBA8A00171EFE /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		9B120262236CBACD00171EFE /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9B120264236CBB3100171EFE /* AddCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewController.swift; sourceTree = "<group>"; };
 		9B84CC2F236A62AF00ACECF7 /* c0772733_MidTerm_MAD3115F2019-P1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "c0772733_MidTerm_MAD3115F2019-P1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B84CC32236A62AF00ACECF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B84CC34236A62AF00ACECF7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		9B84CC6A236A694000ACECF7 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
 		9BA3CFA5236C936C009B6F48 /* users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
 		9BA3CFA7236C99A7009B6F48 /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
-		9BDE8D62236BBF82002FDF6F /* CDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +113,16 @@
 			children = (
 				9B84CC6A236A694000ACECF7 /* download.jpg */,
 				9B84CC32236A62AF00ACECF7 /* AppDelegate.swift */,
+				9BA3CFA7236C99A7009B6F48 /* CustomerListViewController.swift */,
 				9B84CC34236A62AF00ACECF7 /* LoginViewController.swift */,
 				9B84CC36236A62AF00ACECF7 /* Main.storyboard */,
 				9B84CC39236A62AF00ACECF7 /* Assets.xcassets */,
 				9B84CC3B236A62AF00ACECF7 /* LaunchScreen.storyboard */,
 				9B84CC3E236A62AF00ACECF7 /* Info.plist */,
-				9BDE8D62236BBF82002FDF6F /* CDViewController.swift */,
 				9BA3CFA5236C936C009B6F48 /* users.plist */,
-				9BA3CFA7236C99A7009B6F48 /* CustomerListViewController.swift */,
+				9B120260236CBA8A00171EFE /* Singleton.swift */,
+				9B120262236CBACD00171EFE /* Customer.swift */,
+				9B120264236CBB3100171EFE /* AddCustomerViewController.swift */,
 			);
 			path = "c0772733_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -274,10 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B120265236CBB3100171EFE /* AddCustomerViewController.swift in Sources */,
 				9BA3CFA8236C99A7009B6F48 /* CustomerListViewController.swift in Sources */,
+				9B120263236CBACD00171EFE /* Customer.swift in Sources */,
+				9B120261236CBA8A00171EFE /* Singleton.swift in Sources */,
 				9B84CC35236A62AF00ACECF7 /* LoginViewController.swift in Sources */,
 				9B84CC33236A62AF00ACECF7 /* AppDelegate.swift in Sources */,
-				9BDE8D63236BBF82002FDF6F /* CDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
