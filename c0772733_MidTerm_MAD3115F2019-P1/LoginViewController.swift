@@ -49,12 +49,12 @@ class LoginViewController: UIViewController {
             }
             
             
-            let sb=UIStoryboard(name: "Main", bundle: nil)
-            let customerListVC=sb.instantiateViewController(withIdentifier: "customerListVC") as! CustomerListViewController
+            let storyBoard=UIStoryboard(name: "Main", bundle: nil)
+            let customerListVC=storyBoard.instantiateViewController(withIdentifier: "customerListVC") as! CustomerListViewController
             navigationController?.pushViewController(customerListVC, animated: true)
             
-                           let uname=txtUser.text!
-                print("Hello \(uname)")
+                          //let uname=txtUser.text!
+               // print("Hello \(uname)")
         }
         else{
             let alert = UIAlertController(title: "Invalid Username / Password", message: "check again", preferredStyle: .alert)
