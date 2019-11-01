@@ -17,6 +17,7 @@
 		9B84CC64236A63BE00ACECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC3B236A62AF00ACECF7 /* LaunchScreen.storyboard */; };
 		9B84CC65236A63C000ACECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC3B236A62AF00ACECF7 /* LaunchScreen.storyboard */; };
 		9B84CC6B236A694100ACECF7 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC6A236A694000ACECF7 /* download.jpg */; };
+		9BDE8D63236BBF82002FDF6F /* CDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE8D62236BBF82002FDF6F /* CDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9B84CC52236A62AF00ACECF7 /* c0772733_MidTerm_MAD3115F2019_P1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c0772733_MidTerm_MAD3115F2019_P1UITests.swift; sourceTree = "<group>"; };
 		9B84CC54236A62AF00ACECF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B84CC6A236A694000ACECF7 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
+		9BDE8D62236BBF82002FDF6F /* CDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				9B84CC39236A62AF00ACECF7 /* Assets.xcassets */,
 				9B84CC3B236A62AF00ACECF7 /* LaunchScreen.storyboard */,
 				9B84CC3E236A62AF00ACECF7 /* Info.plist */,
+				9BDE8D62236BBF82002FDF6F /* CDViewController.swift */,
 			);
 			path = "c0772733_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				9B84CC35236A62AF00ACECF7 /* ViewController.swift in Sources */,
 				9B84CC33236A62AF00ACECF7 /* AppDelegate.swift in Sources */,
+				9BDE8D63236BBF82002FDF6F /* CDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

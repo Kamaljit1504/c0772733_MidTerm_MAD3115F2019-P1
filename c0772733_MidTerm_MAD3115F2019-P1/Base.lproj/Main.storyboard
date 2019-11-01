@@ -83,11 +83,16 @@
                         <barButtonItem key="backBarButtonItem" title="logout" id="3KO-e9-c1X"/>
                         <barButtonItem key="rightBarButtonItem" title="login" id="qDq-QP-APb">
                             <connections>
+                                <action selector="btnLogin:" destination="BYZ-38-t0r" id="Qkd-Pv-CHM"/>
                                 <segue destination="vjs-lU-JbK" kind="show" id="qnz-iX-9vO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="txtpassword" destination="zmD-RB-zy6" id="UXE-zR-oP9"/>
+                        <outlet property="txtuser" destination="emh-hj-Yxq" id="SH4-ET-11n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,7 +166,6 @@
         <!--View Controller-->
         <scene sceneID="6oF-Zf-zW8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="byE-yi-apZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="auf-fG-SiX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hTW-hG-1Hx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -170,6 +174,7 @@
                         <viewLayoutGuide key="safeArea" id="Acr-yo-f2u"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byE-yi-apZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2078" y="-783"/>
         </scene>

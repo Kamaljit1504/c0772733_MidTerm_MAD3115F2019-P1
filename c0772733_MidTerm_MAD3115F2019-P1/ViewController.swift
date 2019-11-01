@@ -10,13 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var btnLS: UIButton!
-   
+    @IBOutlet weak var txtuser: UITextField!
+    @IBOutlet weak var txtpassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnLogin(_ sender: Any)
+    {
+        if(txtuser.text == "admin@gmail.com" && txtpassword.text == "admin123")
+        {
+            print("Hello, My First Click : ", txtuser.text! )
+        }
+        else{
+            print("User Email / Password incorrect")
+        }
+    }
+    }
+    
 
-}
 
