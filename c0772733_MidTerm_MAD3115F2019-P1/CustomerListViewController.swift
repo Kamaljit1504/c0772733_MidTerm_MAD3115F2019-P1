@@ -58,9 +58,11 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-  
     
-    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tempvar.returnCount()
+    }
+   
     
     
     
