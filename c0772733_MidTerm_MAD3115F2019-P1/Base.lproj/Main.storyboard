@@ -18,29 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzz-ZT-Ug6">
-                                <rect key="frame" x="38" y="266" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.47951748700000002" green="0.15265811460000001" blue="0.31374596780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8t-YL-Omi">
-                                <rect key="frame" x="38" y="358" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.47951748700000002" green="0.15265811460000001" blue="0.31374596780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter user Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="emh-hj-Yxq">
-                                <rect key="frame" x="94" y="299" width="97" height="30"/>
+                                <rect key="frame" x="0.0" y="299" width="311" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zmD-RB-zy6">
-                                <rect key="frame" x="94" y="393" width="97" height="30"/>
+                                <rect key="frame" x="0.0" y="393" width="311" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -73,6 +59,14 @@
                                 <color key="backgroundColor" red="0.47951748700000002" green="0.15265811460000001" blue="0.31374596780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="0.78535729249999997" blue="0.85251554230000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDp-BZ-daE">
+                                <rect key="frame" x="88" y="439" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="btnlogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfb-WP-EDY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.78535729252061715" blue="0.85251554230212834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="0.50708239119999998" blue="0.90945022809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,22 +75,18 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Welcome" id="znd-3i-8i9">
                         <barButtonItem key="backBarButtonItem" title="logout" id="3KO-e9-c1X"/>
-                        <barButtonItem key="rightBarButtonItem" title="login" id="qDq-QP-APb">
-                            <connections>
-                                <action selector="btnLogin:" destination="BYZ-38-t0r" id="Qkd-Pv-CHM"/>
-                                <segue destination="vjs-lU-JbK" kind="show" id="qnz-iX-9vO"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnLogin" destination="KDp-BZ-daE" id="3ZJ-bu-OUe"/>
+                        <outlet property="btnSwitch" destination="BNa-tk-Swc" id="eRc-vQ-khT"/>
                         <outlet property="txtpassword" destination="zmD-RB-zy6" id="UXE-zR-oP9"/>
                         <outlet property="txtuser" destination="emh-hj-Yxq" id="SH4-ET-11n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-717" y="-792"/>
+            <point key="canvasLocation" x="-717.39130434782612" y="-792.1875"/>
         </scene>
         <!--Cusctomer Details-->
         <scene sceneID="6Sw-t1-jXc">
@@ -110,9 +100,6 @@
                                 <rect key="frame" x="56" y="174" width="313" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="customername"/>
-                                <connections>
-                                    <segue destination="BfP-OZ-nkU" kind="show" id="I47-KW-CWr"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -150,9 +137,6 @@
                                 <rect key="frame" x="115" y="232" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="auf-fG-SiX" kind="show" id="BkH-Qm-n00"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

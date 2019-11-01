@@ -17,6 +17,7 @@
 		9B84CC64236A63BE00ACECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC3B236A62AF00ACECF7 /* LaunchScreen.storyboard */; };
 		9B84CC65236A63C000ACECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC3B236A62AF00ACECF7 /* LaunchScreen.storyboard */; };
 		9B84CC6B236A694100ACECF7 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B84CC6A236A694000ACECF7 /* download.jpg */; };
+		9BA3CFA6236C936C009B6F48 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BA3CFA5236C936C009B6F48 /* users.plist */; };
 		9BDE8D63236BBF82002FDF6F /* CDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE8D62236BBF82002FDF6F /* CDViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		9B84CC52236A62AF00ACECF7 /* c0772733_MidTerm_MAD3115F2019_P1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c0772733_MidTerm_MAD3115F2019_P1UITests.swift; sourceTree = "<group>"; };
 		9B84CC54236A62AF00ACECF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B84CC6A236A694000ACECF7 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
+		9BA3CFA5236C936C009B6F48 /* users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
 		9BDE8D62236BBF82002FDF6F /* CDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				9B84CC3B236A62AF00ACECF7 /* LaunchScreen.storyboard */,
 				9B84CC3E236A62AF00ACECF7 /* Info.plist */,
 				9BDE8D62236BBF82002FDF6F /* CDViewController.swift */,
+				9BA3CFA5236C936C009B6F48 /* users.plist */,
 			);
 			path = "c0772733_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B84CC3A236A62AF00ACECF7 /* Assets.xcassets in Resources */,
+				9BA3CFA6236C936C009B6F48 /* users.plist in Resources */,
 				9B84CC65236A63C000ACECF7 /* LaunchScreen.storyboard in Resources */,
 				9B84CC38236A62AF00ACECF7 /* Main.storyboard in Resources */,
 				9B84CC6B236A694100ACECF7 /* download.jpg in Resources */,

@@ -13,22 +13,52 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtuser: UITextField!
     @IBOutlet weak var txtpassword: UITextField!
     
-    override func viewDidLoad() {
+    @IBOutlet weak var btnLogin: UIButton!
+  
+    @IBOutlet weak var btnSwitch: UISwitch!
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func btnLogin(_ sender: Any)
-    {
-        if(txtuser.text == "admin@gmail.com" && txtpassword.text == "admin123")
+    
+    
+    @IBAction func btnlogin(_ sender: UIButton) {
+       
+        
+    }
+    func readInformationPlist()->Bool    {
+        if let bundlePath = Bundle.main.path(forResource: "users", ofType: "plist")
         {
-            print("Hello, My First Click : ", txtuser.text! )
+            
+                let dictionary = NSMutableDictionary(contentsOfFile: bundlePath)
+                let usersList = dictionary!["Users"] as! NSArray
+                
+                for u in usersList
+                {
+                    let user = u as! NSDictionary
+                    let uname = user["username"]! as! String
+                    let pwd = user["password"]! as! String
+                    if uname==txtuser.text! && pwd==txtpassword.text!
+                    {
+                        return true
+                    }
+                }
+                
+                
+            }
+            return false
+        
         }
-        else{
-            print("User Email / Password incorrect")
-        }
+        
     }
-    }
+
+   
+    
+    
+
+
+
     
 
 
