@@ -74,7 +74,10 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
         return "List of Customers"
     }
     
-   
+    override func viewWillAppear(_ animated: Bool) {
+        customerListTable.reloadData()
+        
+    }
     
     
     
