@@ -55,8 +55,10 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
     }
     
     
-   
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+  
     
     
     
