@@ -118,6 +118,9 @@
                                             <color key="backgroundColor" red="1" green="0.59865672410000004" blue="0.65820135069999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.59865672410000004" blue="0.65820135069999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="vxf-82-YXj" kind="show" id="aV3-I8-IcQ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qaQ-dE-30J">
                                         <rect key="frame" x="0.0" y="72" width="414" height="44"/>
@@ -291,20 +294,42 @@
             </objects>
             <point key="canvasLocation" x="237.68115942028987" y="-792.1875"/>
         </scene>
-        <!--View Controller-->
+        <!-- INFO-->
         <scene sceneID="zBg-qj-rtv">
             <objects>
-                <viewController id="vxf-82-YXj" sceneMemberID="viewController">
+                <viewController title=" INFO" id="vxf-82-YXj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l9Z-O0-ugp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1O3-di-By1">
+                                <rect key="frame" x="11" y="185" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CustomerInfo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8a-ob-fxm">
+                                <rect key="frame" x="11" y="253" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Total"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIQ-OI-Zfr">
+                                <rect key="frame" x="11" y="324" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="All the Bill"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nza-EP-uE8">
+                                <rect key="frame" x="3" y="488" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add New Bill"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.59865672410000004" blue="0.65820135069999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="lxB-d5-uya"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMy-HG-pcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="48"/>
+            <point key="canvasLocation" x="237.68115942028987" y="47.544642857142854"/>
         </scene>
         <!-- add -->
         <scene sceneID="KVr-GQ-wVX">

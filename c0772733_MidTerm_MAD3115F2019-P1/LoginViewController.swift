@@ -53,8 +53,8 @@ class LoginViewController: UIViewController {
             let customerListVC=sb.instantiateViewController(withIdentifier: "customerListVC") as! CustomerListViewController
             navigationController?.pushViewController(customerListVC, animated: true)
             
-            //                let uname=txtUser.text!
-            //                print("Hello \(uname)")
+                           let uname=txtUser.text!
+                print("Hello \(uname)")
         }
         else{
             let alert = UIAlertController(title: "Wrong Username Or Password", message: "change username or password", preferredStyle: .alert)
