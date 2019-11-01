@@ -66,6 +66,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEF-8i-nr6"/>
                                     <action selector="btnlogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfb-WP-EDY"/>
                                 </connections>
                             </button>
@@ -93,7 +94,7 @@
         <!--Cusctomer Details-->
         <scene sceneID="6Sw-t1-jXc">
             <objects>
-                <viewController storyboardIdentifier="customerListVC" id="vjs-lU-JbK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customerListVC" id="vjs-lU-JbK" customClass="CustomerListViewController" customModule="c0772733_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HuV-LF-AZR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

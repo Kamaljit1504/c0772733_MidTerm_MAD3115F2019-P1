@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var txtuser: UITextField!
     @IBOutlet weak var txtpassword: UITextField!
@@ -61,12 +61,12 @@ class ViewController: UIViewController {
         {
             
                 let dictionary = NSMutableDictionary(contentsOfFile: bundlePath)
-                let usersList = dictionary!["Users"] as! NSArray
+                let usersList = dictionary!["user"] as! NSArray
                 
                 for u in usersList
                 {
                     let user = u as! NSDictionary
-                    let uname = user["User"]! as! String
+                    let uname = user["user"]! as! String
                     let pwd = user["password"]! as! String
                     if uname==txtuser.text! && pwd==txtpassword.text!
                     {

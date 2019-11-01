@@ -5,7 +5,7 @@
 	<key>New item</key>
 	<array>
 		<dict>
-			<key>User</key>
+			<key>user</key>
 			<string>Kamal</string>
 			<key>password</key>
 			<string>772733</string>
