@@ -26,11 +26,11 @@ class LoginViewController: UIViewController {
         getdata.createCust()
         
         uDefault  = UserDefaults.standard
-        if let userName = uDefault.value(forKey: "userName"){
+        if let userName = uDefault.value(forKey: "username"){
             txtUser.text = userName as? String
         }
         
-        if let userPassword = uDefault.value(forKey: "userPassword"){
+        if let userPassword = uDefault.value(forKey: "password"){
             txtPassword.text = userPassword as? String
         }
     }
@@ -41,11 +41,11 @@ class LoginViewController: UIViewController {
         if readInformationPlist()
         {
             if self.btnRememberMe.isOn{
-                self.uDefault.set(txtUser.text, forKey: "userName")
-                self.uDefault.set(txtPassword.text, forKey: "userPassword")
+                self.uDefault.set(txtUser.text, forKey: "username")
+                self.uDefault.set(txtPassword.text, forKey: "password")
             }else{
-                self.uDefault.removeObject(forKey: "userName")
-                self.uDefault.removeObject(forKey: "userPassword")
+                self.uDefault.removeObject(forKey: "username")
+                self.uDefault.removeObject(forKey: "password")
             }
             
             
