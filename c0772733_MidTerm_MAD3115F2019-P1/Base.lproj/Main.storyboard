@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="237.68115942028987" y="47.544642857142854"/>
         </scene>
-        <!--View Controller-->
+        <!--New bill-->
         <scene sceneID="vxd-fn-PiV">
             <objects>
-                <viewController id="BJ9-8d-UiT" sceneMemberID="viewController">
+                <viewController title="New bill" id="BJ9-8d-UiT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="taB-LA-wKx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
