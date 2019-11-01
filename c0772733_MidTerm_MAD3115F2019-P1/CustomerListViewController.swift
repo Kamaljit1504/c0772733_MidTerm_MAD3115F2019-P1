@@ -62,7 +62,18 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tempvar.returnCount()
     }
-   
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let x = tempvar.returnCustObject(custID: Int(indexPath.row+1))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath)
+        cell.textLabel?.text = x?.fullName
+        return cell
+    }
+    
+  
+    }
+    
+    
     
     
     
